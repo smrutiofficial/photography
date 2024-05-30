@@ -1,0 +1,27 @@
+@media screen and (max-width: 600px) {
+    #faq{
+        height: fit-content;
+    }
+    .qescon {
+        width: 74%;
+        display: flex;
+        padding: 2rem 0rem;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .qescon p:nth-child(1) {
+        font-weight: 600;
+        font-size: var(--sub_sm) !important;
+        color: rgb(46, 46, 46);
+        padding-bottom: 0.6rem;
+        line-height: 1.3rem;
+        text-align: justify;
+    }
+
+    .qescon p:nth-child(2) {
+        font-size: 15px !important;
+        line-height: 1.5rem;
+        text-align: justify;
+        color: rgb(116, 115, 115);
+    }
+}
