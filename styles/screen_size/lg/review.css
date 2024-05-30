@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+:root {
+    --DarkBlue: hsl(240, 38%, 20%);
+    --GrayishBlue: hsl(240, 18%, 77%);
+    --Background: #FFFFFF;
+    --font-300: 300;
+    --font-500: 500;
+    --font-700: 700;
+    --bezier: cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+
+#testimonial {
+    background-color: var(--softbg);
+    height: fit-content;
+}
+
+#testimonial #sectit {
+    color: rgb(32, 32, 32);
+}
+
+.slider .buttons {
+    z-index: 1;
+    right: 50%;
+    top: 261px;
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    border-radius: 50px;
+    transform: translateX(50%);
+    background-color: var(--Background);
+}
+
+.slider .buttons .previous,
+.slider .buttons .next {
+    width: 50%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.slider .buttons .previous {
+    left: 0;
+    background-image: url('https://alcs-slider.netlify.app/images/icon-prev.svg');
+}
+
+.slider .buttons .previous:hover {
+    transform: scale(1.25);
+}
+
+.slider .buttons .next {
+    right: 0;
+    background-image: url('https://alcs-slider.netlify.app/images/icon-next.svg');
+}
+
+.slider .buttons .next:hover {
+    transform: scale(1.25);
+}
+
+.slider .slide {
+    /* border: red solid; */
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+.slider .slide .testimonial {
+    padding: 32px 51px;
+    background-size: 60px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-image: url(https://alcs-slider.netlify.app/images/pattern-quotes.svg);
+}
+
+.slider .slide .testimonial blockquote {
+    font-size: 18px;
+    font-weight: var(--font-300);
+    line-height: 24px;
+    margin-bottom: 36px;
+    width: 95%;
+    /* border: red solid; */
+}
+
+.slider .slide .testimonial .author {
+    font-size: 15px;
+    font-weight: var(--font-700);
+}
+
+.slider .slide .testimonial .author span {
+    display: block;
+    color: var(--GrayishBlue);
+    font-weight: var(--font-500);
+}
+
+.slider .slide .slider-img {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/src/svgs/pattern-bg.svg);
+}
+
+.slider .slide .slider-img img {
+    width: 240px;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0px 16px 40px 0px rgba(210, 201, 105, 0.4);
+}
+
+.slider .slide .active {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    transition-delay: 0.4s;
+}
+
+footer {
+    font-size: 11px;
+    text-align: center;
+}
+
+footer a {
+    color: hsl(228, 45%, 44%);
+}
+
+.hide {
+    display: none;
+}
+
+
+@media screen and (min-width: 900px) {
+    body main {
+        width: 100%;
+        max-width: 1054px;
+        padding: 64px 64px 64px 0;
+    }
+
+    .slider {
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+        /* border: red solid; */
+        position: relative;
+    }
+
+    .slider .buttons {
+        right: 25%;
+        top: 85%;
+        border: var(--yellow-1) solid;
+    }
+
+    .slider .slide {
+        position: relative;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .slider .slide .testimonial {
+        padding: 32px 0 0 0;
+        background-size: 80px;
+        background-position: 19% -7%;
+        transform: translateX(100px);
+    }
+
+    .slider .slide .testimonial blockquote {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .slider .slide .testimonial .author span {
+        display: contents;
+    }
+
+    .slider .slide .slider-img {
+        padding: 55px;
+    }
+
+    .slider .slide .slider-img img {
+        width: 400px;
+    }
+}

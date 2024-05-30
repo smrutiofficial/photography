@@ -1,0 +1,171 @@
+#videography {
+    background: var(--about-bg);
+}
+
+#sectit {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    padding: 0rem 0rem 0rem 15rem;
+}
+
+.vsecpos {
+    display: flex;
+    justify-content: center;
+    /* border: green solid; */
+    height: 50%;
+    position: relative;
+}
+
+.vsec {
+    /* border: red solid; */
+    width: 88%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subvsec {
+    width: 50%;
+    /* border: pink solid; */
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.subvsec p {
+    color: white;
+    font-size: 38px;
+    font-weight: 600;
+    text-align: center;
+    width: 72%;
+}
+
+.imgconvid {
+    /* background-color: red; */
+    width: 70%;
+    height: 80%;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    border: var(--yellow-1) solid 6px;
+}
+
+.imgconvid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.line_v {
+    height: 0.2rem;
+    width: 50%;
+    margin-top: 2rem;
+    background-color: white;
+}
+
+.glassbg {
+    position: relative;
+    /* background-color: red; */
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.glasscon {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 76%;
+    height: 78%;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.we {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: red solid; */
+}
+
+.we:nth-child(1) {
+    width: 40%;
+}
+
+.we:nth-child(1) p {
+    color: white;
+    text-transform: capitalize;
+    font-size: 24px;
+    width: 60%;
+    font-weight: 500;
+}
+
+.uty {
+    color: white;
+    font-weight: 600;
+    gap: 1rem;
+}
+
+.uty i {
+    /* border: red solid; */
+    font-size: 2.8rem;
+    color: var(--yellow-1);
+}
+
+#bgtit1 {
+    position: absolute;
+    font-size: 258px;
+    top: 4rem;
+    right: 0;
+    font-weight: 700;
+    color: transparent;
+    opacity: 0.3;
+    -webkit-text-stroke: 1px var(--green-1);
+}
+
+#bgtit2 {
+    position: absolute;
+    font-size: 258px;
+    bottom: 4rem;
+    left: 0;
+    font-weight: 700;
+    color: transparent;
+    opacity: 0.3;
+    -webkit-text-stroke: 1px var(--green-1);
+    z-index: 0;
+}
+#icon3{
+    position: absolute;
+    right: 8rem;
+    top: 0;
+}
+#icon2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.subvsec{
+    position: relative;
+}
+#icon1{
+    position: absolute;
+    top: 50%;
+    width: 8rem;
+    height: 8rem;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

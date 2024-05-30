@@ -1,0 +1,194 @@
+@media only screen and (max-width: 600px) {
+    #videography {
+        background: var(--about-bg);
+        height: fit-content;
+        padding-bottom: 4rem;
+    }
+    
+    #sectit {
+        font-size: var(--heading-sm) !important;
+        font-weight: 700;
+        color: white;
+        padding: 0rem 0rem 0rem 3rem;
+        padding-bottom: 1.2rem;
+    }
+    
+    .vsecpos {
+        display: flex;
+        justify-content: center;
+        /* border: green solid 5px; */
+        height: 50%;
+        position: relative;
+    }
+    
+    .vsec {
+        flex-direction: column;
+        /* border: red solid; */
+        width: 88%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .subvsec {
+        width: 100%;
+        /* border: pink solid; */
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    
+    .subvsec p {
+        padding-top: 1rem;
+        color: white;
+        font-size: var(--sub-sm) !important;
+        font-weight: 600;
+        text-align: center;
+        width: 72%;
+    }
+    
+    .imgconvid {
+        /* background-color: red; */
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10rem;
+        border-radius: 0.8rem;
+        overflow: hidden;
+        border: var(--yellow-1) solid 3px;
+    }
+    
+    .imgconvid img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .line_v {
+        height: 0.12rem;
+        width: 50%;
+        margin-top: 1.2rem !important;
+        background-color: white;
+    }
+    
+    .glassbg {
+        position: relative;
+        /* background-color: red; */
+        height: 30%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+    
+    .glasscon {
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        width: 60%;
+        margin-top: 2rem;
+        height: fit-content;
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .we {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       padding-bottom: 2rem;
+       
+        /* border: red solid; */
+    }
+    .we p{
+        color: rgb(255, 255, 255);
+    }
+    .we:nth-child(1) {
+        width: 100%;
+    }
+    
+    .we:nth-child(1) p {
+        display: none;
+        color: rgb(255, 255, 255);
+        text-transform: capitalize;
+        font-size: var(--sub-sm) !important;
+        width: 80%;
+        text-align: center;
+        font-weight: 500;
+        /* padding-bottom: 1rem; */
+        padding-top: 1.5rem;
+    }
+    
+    .uty {
+        color: white;
+        font-weight: 600;
+        gap: 1rem;
+    }
+    
+    .uty i {
+        /* border: red solid; */
+        font-size: 2.8rem;
+        color: var(--yellow-1);
+    }
+    
+    #bgtit1 {
+        position: absolute;
+        font-size: 90px !important;
+        top: 20rem;
+        right: 0;
+        font-weight: 700;
+        color: transparent;
+        opacity: 0.3;
+        -webkit-text-stroke: 1px var(--green-1);
+    }
+    
+    #bgtit2 {
+        position: absolute;
+        font-size: 90px !important;
+        bottom: 1rem;
+        left: 0;
+        font-weight: 700;
+        color: transparent;
+        opacity: 0.3;
+        -webkit-text-stroke: 1px var(--green-1);
+        z-index: 0;
+    }
+    #icon3{
+        position: absolute;
+        right: 0rem;
+        top: 0;
+        scale: 0.3;
+        transform: translate(50%,-50%);
+    }
+    #icon2{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        scale: 0.3;
+        transform: translate(-120%,120%);
+    }
+    .subvsec{
+        position: relative;
+    }
+    #icon1{
+        position: absolute;
+        top: 50%;
+        width: 8rem;
+        height: 8rem;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}

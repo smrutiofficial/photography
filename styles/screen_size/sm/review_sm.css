@@ -1,0 +1,17 @@
+@media screen and (max-width: 600px) {
+    #testimonial #sectit {
+        color: rgb(32, 32, 32);
+        display: none;
+    }
+    .slider {
+        position: relative;
+    }
+    .slider .slide .testimonial{
+        /* border: red solid; */
+        width: 100%;
+    }
+    .slider .slide .testimonial blockquote {
+        font-size: 17px;
+        line-height: 30px;
+    }
+}

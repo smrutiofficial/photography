@@ -1,0 +1,116 @@
+#about {
+    background: var(--about-bg);
+}
+
+.imgcon_about {
+    background-color: var(--green-3);
+    width: 380px;
+    height: 508px;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    opacity: 0.8;
+    transform: translateX(10rem);
+}
+
+.imgcon_about img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.aboutcon {
+    display: flex;
+    width: 100%;
+    /* border: red solid; */
+    height: 75%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.divcon_one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    /* border: rgb(119, 234, 136) solid; */
+}
+
+.divcon_two {
+    width: 60%;
+    padding: 2rem 0rem 0rem 10rem;
+    /* border: rgb(93, 0, 255) solid; */
+}
+
+#sectag {
+    color: var(--yellow-1);
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.divcon_two h1 {
+    width: 65%;
+    font-size: 57px;
+    font-weight: 700;
+    color: white;
+    padding-top: 1rem;
+}
+
+#abcont {
+    font-size: 18px;
+    padding-top: 1rem;
+    /* border: red solid; */
+    width: 80%;
+    color: rgb(211, 211, 211);
+}
+
+#abcont::first-letter {
+    color: var(--green-3);
+    font-size: 75px;
+    font-weight: 700;
+    float: left;
+    padding: 5px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.part {
+    /* background-color: var(--green-1); */
+    width: 23rem;
+    display: flex;
+    justify-content: center;
+    /* border: red solid; */
+    align-items: center;
+}
+
+.part p:nth-child(1) {
+    font-size: 120px;
+    font-weight: 700;
+    color: var(--yellow-1);
+}
+
+.part p:nth-child(2) {
+    font-size: 34px;
+    font-weight: 600;
+    /* border: red solid; */
+    width: 50%;
+    color: white;
+}
+.part:nth-child(2) p:nth-child(1){
+    color: var(--green-3);
+}
+#about_bgy{
+    position: absolute;
+    font-size: 258px;
+    font-weight: 700;
+    color: transparent;
+    bottom: 2rem;
+    opacity: 0.2;
+    right: 2rem;
+    -webkit-text-stroke: 1px var(--green-1);
+}

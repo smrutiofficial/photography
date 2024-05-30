@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --green-1: #BDFFC3;
+    --green-2: #5D9662;
+    --green-3: #8CCC92;
+    --yellow-1: #DAB059;
+    --softbg: #EDFFEE;
+    --sidebar: rgba(5, 5, 5, 0.2);
+
+    /* text colour */
+    --text-color: #2c3e50;
+    /* background colour */
+    --background-color: hsl(192, 15%, 94%);
+    /* Gradient colour */
+    --light-gradient: radial-gradient(circle,
+            rgba(214, 240, 77, 1) 20%,
+            rgba(46, 150, 255, 1) 100%);
+    --home-bg: linear-gradient(0deg, rgba(15, 32, 39, 1) 0%, rgba(32, 58, 67, 1) 45%, rgba(44, 83, 100, 1) 100%);
+    --about-bg: linear-gradient(180deg, rgba(93, 150, 98, 1) 0%, rgba(41, 78, 93, 1) 100%);
+    /* font size */
+    --tit-sm: 16px;
+    --heading-sm: 27px;
+    --sub_sm:15px ;
+    -item-heading-sm:10px ;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    user-select: none;
+    font-family: "Inter", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* cursor: none; */
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    mix-blend-mode: difference;
+    text-decoration: none;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#cursor {
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255, 255, 255);
+    top: 0%;
+    left: 0%;
+    z-index: 101;
+    border-radius: 50%;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    pointer-events: none;
+    mix-blend-mode: difference;
+}
+
+.rightside {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 102;
+    background-color: transparent;
+}
+
+.imgvtyu {
+    position: relative;
+    /* border: red solid; */
+    /* background-color: red; */
+    width: 70%;
+    height: 80%;
+}
