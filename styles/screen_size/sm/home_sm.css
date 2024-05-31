@@ -17,6 +17,9 @@
     }
 
 
+    #logo_pic {
+        width: 8rem;
+    }
     #hero {
         height: fit-content !important;
         /* overflow-y: visible; */
@@ -27,12 +30,18 @@
     a {
         font-size: 10px !important;
     }
-
-    nav,
+    #nav_br {
+        height: 3rem;
+    }
+    
+    
     .sidegrad {
         display: none;
     }
 
+    .flexnav .se:nth-child(2),.flexnav .se:nth-child(3){
+        display: none;
+    }
     #home {
         /* border: rgb(255, 252, 89) solid; */
         width: 100vw;

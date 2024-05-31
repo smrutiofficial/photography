@@ -1,26 +1,28 @@
 @media only screen and (max-width: 600px) {
 
     .imgcon_about {
-        background-color: var(--green-3);
-        width: 180px;
-        height: 80%;
-        border-radius: 0.8rem;
+        background-color: transparent;
+        width: 50%;
+        height: 70%;
         overflow: hidden;
+        transform: translate(0rem,0rem);
+        /* border: red solid; */
         opacity: 0.8;
-        transform: translateX(0rem);
     }
-
+    
     #about {
         /* border: red solid; */
         height: fit-content;
         padding-bottom: 2rem;
         padding-top: 2rem;
     }
-
+    
     .imgcon_about img {
-        object-fit: cover;
+        /* border: red solid; */
+        border-radius: 0.8rem;
         height: 100%;
         width: 100%;
+        object-fit:cover;
     }
 
     .aboutcon {
@@ -130,7 +132,7 @@
 
     #about_bgy {
         position: absolute;
-        font-size: 258px;
+        font-size: 68px !important;
         font-weight: 700;
         color: transparent;
         bottom: 2rem;
