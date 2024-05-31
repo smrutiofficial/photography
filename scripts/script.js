@@ -406,3 +406,30 @@ main.addEventListener("mousemove", function (val) {
 
 
 
+
+
+
+//============================================================================
+ // Define a function to change the navbar background color
+ function changeNavbarColor(color) {
+    document.getElementById('nav_br').style.backgroundColor = color;
+}
+
+function createScrollTrigger(trigger, color) {
+    ScrollTrigger.create({
+        trigger: trigger,
+        start: "top top",
+        end: "bottom top",
+        onEnter: () => changeNavbarColor(color),
+        onLeave: () => changeNavbarColor("transparent"),
+        onEnterBack: () => changeNavbarColor(color),
+        onLeaveBack: () => changeNavbarColor("transparent"),
+    });
+}
+
+// Apply the function to each section
+createScrollTrigger("#promosec", "rgba(0,0,0,0.8)");
+createScrollTrigger("#services", "rgba(0,0,0,0.8)");
+createScrollTrigger("#works", "rgba(0,0,0,0.8)");
+createScrollTrigger("#testimonial", "rgba(0,0,0,0.8)");
+createScrollTrigger("#faq", "rgba(0,0,0,0.8)");

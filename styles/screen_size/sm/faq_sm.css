@@ -1,7 +1,8 @@
 @media screen and (max-width: 600px) {
-    #faq{
+    #faq {
         height: fit-content;
     }
+
     .qescon {
         width: 74%;
         display: flex;
@@ -9,6 +10,7 @@
         flex-direction: column;
         gap: 1.5rem;
     }
+
     .qescon p:nth-child(1) {
         font-weight: 600;
         font-size: var(--sub_sm) !important;
@@ -23,5 +25,45 @@
         line-height: 1.5rem;
         text-align: justify;
         color: rgb(116, 115, 115);
+    }
+
+
+
+
+    .bannerdiv {
+        background: rgb(255, 67, 67);
+        background: linear-gradient(90deg, rgba(255, 67, 67, 1) 0%, rgba(243, 182, 54, 1) 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .bannerdiv p:nth-child(1) {
+        color: white;
+        font-weight: 700;
+        text-align: center;
+        font-size: 17px !important;
+        padding-bottom: 1rem;
+    }
+
+    .bannerdiv p:nth-child(2) {
+        color: white;
+        /* border: red solid; */
+        width: 80%;
+        text-align: center;
+        font-size: 15px !important;
+        padding-bottom: 2rem;
+    }
+
+    .bannerdiv button {
+        padding: 0.8rem 1.4rem;
+        border: none;
+        border-radius: 0.5rem;
+        font-size: 12px;
+        margin-bottom: 2rem;
+        color: rgb(47, 47, 47);
+        font-weight: 600;
     }
 }

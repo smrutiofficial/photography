@@ -1,0 +1,122 @@
+@media only screen and (max-width: 600px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        background-color: #243443;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding-top: 2rem;
+    }
+
+    .footer {
+        /* border: red solid; */
+        padding: 2rem 0rem;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        width: 80%;
+        justify-content: space-evenly;
+        margin-bottom: 3rem;
+
+    }
+
+    .r1,
+    .r2,
+    .r3 {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        gap: 0.8rem;
+        text-transform: capitalize;
+        text-align: left;
+    }
+
+    .rp {
+        font-size: 30px;
+        font-weight: 700;
+        width: 100%;
+    }
+
+    .tpos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .logo2 {
+        /* border: red solid; */
+        padding-left: 1.2rem;
+        /* filter: saturate(0) contrast(2) brightness(2); */
+        width: 10rem;
+        overflow: hidden;
+        height: 5.5rem;
+    }
+
+    .sc2top {
+        padding-right: 1.8rem;
+    }
+
+    .sc2top p {
+        background-color: var(--green-2);
+        border-radius: 50%;
+        height: 3rem;
+        width: 3rem;
+        display: flex;
+        font-size: 20px !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    .r1,
+    .r2 {
+        padding-bottom: 2rem;
+    }
+
+    .r2 p,
+    .r3 p {
+        font-size: 17px !important;
+        color: #e0e0e0d5;
+    }
+
+    .r0 {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .r0 iframe {
+        border: red solid;
+
+    }
+
+    .r1 p:nth-child(1) {
+        font-weight: 700;
+        color: #bfbfbf92;
+        font-size: 15px !important;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    .r1 p:nth-child(2) {
+        font-weight: 600;
+        color: #bfbfbfd4;
+        font-size: 15px !important;
+        padding-bottom: 1rem;
+    }
+
+    .r1 p:nth-child(3) {
+        text-transform: lowercase;
+        color: #bfbfbf92;
+        font-size: 15px !important;
+        padding-bottom: 1rem;
+    }
+}
