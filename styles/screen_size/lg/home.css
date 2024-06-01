@@ -1,7 +1,9 @@
 #ui {
     color: var(--primary-color);
 }
-
+.menuicon,.navic {
+    display: none;
+}
 nav {
     position: fixed;
     width: 100vw;

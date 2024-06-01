@@ -433,3 +433,12 @@ createScrollTrigger("#services", "rgba(0,0,0,0.8)");
 createScrollTrigger("#works", "rgba(0,0,0,0.8)");
 createScrollTrigger("#testimonial", "rgba(0,0,0,0.8)");
 createScrollTrigger("#faq", "rgba(0,0,0,0.8)");
+
+
+document.getElementById('navicon').addEventListener('click', function() {
+    document.querySelector('.menuicon').style.display = 'block';
+});
+
+document.getElementById('closeic').addEventListener('click', function() {
+    document.querySelector('.menuicon').style.display = 'none';
+});
