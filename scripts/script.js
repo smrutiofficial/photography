@@ -442,3 +442,54 @@ document.getElementById('navicon').addEventListener('click', function() {
 document.getElementById('closeic').addEventListener('click', function() {
     document.querySelector('.menuicon').style.display = 'none';
 });
+
+
+
+
+
+document.querySelectorAll('.se ul li').forEach(function(item) {
+    item.addEventListener('click', function() {
+        // Remove 'active' class from all li elements
+        document.querySelectorAll('.se ul li').forEach(function(li) {
+            li.classList.remove('active');
+        });
+
+        // Add 'active' class to the clicked li element
+        item.classList.add('active');
+    });
+});
+
+
+// ------
+document.querySelectorAll('.navmenu li').forEach(function(item) {
+    item.addEventListener('click', function() {
+        // Remove 'active_sm' class from all li elements
+        document.querySelectorAll('.navmenu li').forEach(function(li) {
+            li.classList.remove('active_sm');
+        });
+
+        // Add 'active_sm' class to the clicked li element
+        item.classList.add('active_sm');
+
+        // Hide the menuicon
+        document.querySelector('.menuicon').style.display = 'none';
+    });
+});
+
+document.querySelectorAll('.social_sm .sm_soi').forEach(function(item) {
+    item.addEventListener('click', function() {
+        // Redirect to the URL specified in data-url attribute
+        window.location.href = item.getAttribute('data-url');
+    });
+});
+document.querySelectorAll('.social .sol').forEach(function(item) {
+    item.addEventListener('click', function() {
+        // Redirect to the URL specified in data-url attribute
+        window.location.href = item.getAttribute('data-url');
+    });
+});
+
+document.querySelector('.sc2top').addEventListener('click', function() {
+    // Navigate to #hero section
+    window.location.hash = '#hero';
+});
